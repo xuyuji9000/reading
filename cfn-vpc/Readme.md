@@ -1,0 +1,1 @@
+Use this [tool](https://www.ipaddressguide.com/cidr) to compute the CIDR block.
