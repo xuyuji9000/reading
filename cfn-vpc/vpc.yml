@@ -1,0 +1,446 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description:
+  This template builds a VPC Network Template with Cloudformation. In prod this template creates a routable network with public and private subnets in all AvailabilityZones.
+  VPC naming structure ${ServiceName}-${Stage}
+
+Parameters:
+
+  ServiceName:
+    Default: default
+    Description: The logical name for this cloudformation resource, it could be the application name, project name etc
+    Type: String
+
+  Stage:
+    Description: Product Environment for the Stack
+    Type: String
+
+  VPCCIDR:
+    Description: VPC CIDR (X.X.0.0/18)
+    Type: String
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+
+  PublicSubnetCidrAZ1:
+    Description: CIDR Block for Public Subnet Availability Zone 1
+    Type: String
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    MinLength: 9
+    MaxLength: 18
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x
+
+  PrivateSubnetCidrAZ1:
+    Description: CIDR Block for Internal Subnet Availability Zone 1
+    Type: String
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    MinLength: 9
+    MaxLength: 18
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x
+
+  PublicSubnetCidrAZ2:
+    Description: CIDR Block for Public Subnet Availability Zone 2
+    Type: String
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    MinLength: 9
+    MaxLength: 18
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x
+
+  PrivateSubnetCidrAZ2:
+    Description: CIDR Block for Internal Subnet Availability Zone 2
+    Type: String
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    MinLength: 9
+    MaxLength: 18
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x
+
+  # AvailabilityZone1:
+  #   Description: Availability Zone name
+  #   Type: String
+  #   AllowedPattern: "[-a-zA-Z0-9]*"
+  #   MinLength: 10
+  #   MaxLength: 15
+  #   ConstraintDescription: Alphanumeric characters and dashes only
+
+  # AvailabilityZone2:
+  #   Description: Availability Zone name
+  #   Type: String
+  #   AllowedPattern: "[-a-zA-Z0-9]*"
+  #   MinLength: 10
+  #   MaxLength: 15
+  #   ConstraintDescription: Alphanumeric characters and dashes only
+
+  LocalNatPerAZ:
+    Description: A local NAT per AZ ensures instances in an AZ can reach the internet regardless of connectivity between the AZs. This is a Best Practice HA config.
+    Type: String
+    Default: False
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: "Business Settings"
+        Parameters:
+          - Team
+          - Project
+          - Brand
+          - Stage
+      - Label:
+          default: "VPC Settings"
+        Parameters:
+          - VPCCIDR
+          # - AvailabilityZone1
+          - PublicSubnetCidrAZ1
+          - PrivateSubnetCidrAZ1
+          # - AvailabilityZone2
+          - PublicSubnetCidrAZ2
+          - PrivateSubnetCidrAZ2
+
+Conditions:
+
+  DoLocalNatPerAZ?:
+    !Or [ !Equals [ !Ref LocalNatPerAZ, "true" ], !Equals [ !Ref Stage, "prod" ] ]
+
+  IsProduction?:
+    !Equals [ !Ref Stage, "prod" ]
+
+  IsNonProd?:
+    !Equals [ !Ref Stage, "nonprod" ]
+
+Resources:
+
+  InternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+
+  NatGatewayEIP1:
+    Type: "AWS::EC2::EIP"
+    Properties:
+      Domain: "vpc"
+
+  NatGatewayEIP2:
+    Condition: DoLocalNatPerAZ?
+    Type: "AWS::EC2::EIP"
+    Properties:
+      Domain: vpc
+
+  NatGatewayEIP3:
+    Condition: DoLocalNatPerAZ?
+    Type: "AWS::EC2::EIP"
+    Properties:
+      Domain: vpc
+
+  NatGatewayAZ1:
+    Type: "AWS::EC2::NatGateway"
+    DependsOn: VPCGatewayAttachment
+    Properties:
+      AllocationId: !GetAtt NatGatewayEIP1.AllocationId
+      SubnetId: !Ref PublicSubnetAZ1
+
+  NatGatewayAZ2:
+    Type: "AWS::EC2::NatGateway"
+    Condition: DoLocalNatPerAZ?
+    DependsOn: VPCGatewayAttachment
+    Properties:
+      AllocationId: !GetAtt NatGatewayEIP2.AllocationId
+      SubnetId: !Ref PublicSubnetAZ2
+
+  PrivateRouteAZ1:
+    Type: "AWS::EC2::Route"
+    Properties:
+      DestinationCidrBlock: "0.0.0.0/0"
+      NatGatewayId:
+        !Ref NatGatewayAZ1
+      RouteTableId:
+        !Ref PrivateRouteTableAZ1
+
+  PrivateRouteTableAZ1:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Private
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PrivateSubnetAZ1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone:
+        !Select [0, !GetAZs ""]
+        # !Ref AvailabilityZone1
+      CidrBlock:
+        !Ref PrivateSubnetCidrAZ1
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Private
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PrivateSubnetRouteTableAssociationAZ1:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      RouteTableId:
+        !Ref PrivateRouteTableAZ1
+      SubnetId:
+        !Ref PrivateSubnetAZ1
+
+  PrivateRouteAZ2:
+    Type: "AWS::EC2::Route"
+    Properties:
+      DestinationCidrBlock: "0.0.0.0/0"
+      NatGatewayId:
+        !If ['DoLocalNatPerAZ?', !Ref NatGatewayAZ2, !Ref NatGatewayAZ1]
+      RouteTableId:
+        !Ref PrivateRouteTableAZ2
+
+  PrivateRouteTableAZ2:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Private
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PrivateSubnetAZ2:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone:
+        # !Ref AvailabilityZone2
+        !Select [1, !GetAZs ""]
+      CidrBlock:
+        !Ref PrivateSubnetCidrAZ2
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Private
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PrivateSubnetRouteTableAssociationAZ2:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      RouteTableId:
+        !Ref PrivateRouteTableAZ2
+      SubnetId:
+        !Ref PrivateSubnetAZ2
+
+
+  PublicRoute:
+    Type: "AWS::EC2::Route"
+    Properties:
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId:
+        !Ref InternetGateway
+      RouteTableId:
+        !Ref PublicRouteTable
+
+  PublicRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Public
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PublicSubnetAZ1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone:
+        !Select [0, !GetAZs ""]
+        # !Ref AvailabilityZone1
+      CidrBlock:
+        !Ref PublicSubnetCidrAZ1
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Public
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+  PublicSubnetAZ2:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone:
+        # !Ref AvailabilityZone2
+        !Select [1, !GetAZs ""]
+      CidrBlock:
+        !Ref PublicSubnetCidrAZ2
+      VpcId:
+        !Ref VPC
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+        -
+          Key: Type
+          Value: Public
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+
+
+  PublicSubnetRouteTableAssociationAZ1:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      RouteTableId:
+        !Ref PublicRouteTable
+      SubnetId:
+        !Ref PublicSubnetAZ1
+
+  PublicSubnetRouteTableAssociationAZ2:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      RouteTableId:
+        !Ref PublicRouteTable
+      SubnetId:
+        !Ref PublicSubnetAZ2
+
+  VPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock:
+        !Ref VPCCIDR
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        -
+          Key: Name
+          Value: !Sub ${Team}-${Brand}-${Project}-${ServiceName}-${Stage}
+        -
+          Key: Team
+          Value: !Ref Team
+        -
+          Key: Brand
+          Value: !Ref Brand
+        -
+          Key: Stage
+          Value: !Ref Stage
+        -
+          Key: ServiceName
+          Value: !Ref ServiceName
+
+  VPCGatewayAttachment:
+    Type: "AWS::EC2::VPCGatewayAttachment"
+    DependsOn: InternetGateway
+    Properties:
+      InternetGatewayId:
+        !Ref InternetGateway
+      VpcId:
+        !Ref VPC
+
+Outputs:
+  DefaultSecurityGroup:
+    Description: The Default SecurityGroup for the VPC we create in this Stack.
+    Value: !GetAtt VPC.DefaultSecurityGroup
+    Export:
+      Name: !Sub ${AWS::StackName}:DefaultSecurityGroup
+
+  VpcId:
+    Description: The VpcId for the Stack
+    Value: !Ref VPC
+    Export:
+      Name: !Sub ${AWS::StackName}-VpcId
