@@ -27,4 +27,4 @@ This project is used to accumulate consumed books and articles.
 
 ## Vision
 
-- [neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
+- [Neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
