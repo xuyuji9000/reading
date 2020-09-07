@@ -24,3 +24,7 @@ This project is used to accumulate consumed books and articles.
 ## Engineering Philosophy
 
 - [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)
+
+## Vision
+
+- [neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
