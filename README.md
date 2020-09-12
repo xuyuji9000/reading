@@ -34,3 +34,5 @@ This project is used to accumulate consumed books and articles.
 - [Lisa Feldman Barrett](https://en.wikipedia.org/wiki/Lisa_Feldman_Barrett)
 
     - [Lisa Feldman Barrett: How the Brain Creates Emotions | MIT Artificial General Intelligence (AGI)](https://www.youtube.com/watch?v=qwsft6tmvBA)
+
+    - [How Emotions Are Made](https://book.douban.com/subject/26816436/)
