@@ -28,3 +28,9 @@ This project is used to accumulate consumed books and articles.
 ## Vision
 
 - [Neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
+
+## Psychology
+
+- Lisa Feldman Barrett
+
+    - [Lisa Feldman Barrett: How the Brain Creates Emotions | MIT Artificial General Intelligence (AGI)](https://www.youtube.com/watch?v=qwsft6tmvBA)
