@@ -38,3 +38,12 @@ This project is used to accumulate consumed books and articles.
     - [How Emotions Are Made](https://book.douban.com/subject/26816436/)
 
       > Can find the book preview from google books
+
+## International Politics
+
+- [John Mearsheimer](https://en.wikipedia.org/wiki/John_Mearsheimer)
+
+  Books:
+
+  - [The tragedy of Great Power politics](https://openlibrary.org/works/OL4652460W/The_tragedy_of_great_power_politics?edition=tragedyofgreatpo00mear)
+  
