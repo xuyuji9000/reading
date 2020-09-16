@@ -38,3 +38,7 @@ This project is used to accumulate consumed books and articles.
     - [How Emotions Are Made](https://book.douban.com/subject/26816436/)
 
       > Can find the book preview from google books
+
+- [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman)
+
+  - [Thinking, Fast and Slow](https://book.douban.com/subject/6754574/)
