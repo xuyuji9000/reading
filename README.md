@@ -38,14 +38,6 @@ This project is used to accumulate consumed books and articles.
     - [How Emotions Are Made](https://book.douban.com/subject/26816436/)
 
       > Can find the book preview from google books
-  
-- [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky)
-
-  Books:
-
-  - [Language and mind](https://openlibrary.org/books/OL5710044M/Language_and_mind.)
-
-    > Can borrow on https://openlibrary.org
 
 ## International Politics
 
