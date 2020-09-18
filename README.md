@@ -42,3 +42,9 @@ This project is used to accumulate consumed books and articles.
 - [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman)
 
   - [Thinking, Fast and Slow](https://book.douban.com/subject/6754574/)
+
+## Sociology
+
+- [Introduction to sociology](https://openlibrary.org/works/OL2236190W/Introduction_to_sociology?edition=introductiontoso00tisc)
+
+  The reason to explore sociology topic, is derived from the claim of "money, nation and religion are social realities". Then the question comes, what's the discipline studies it.
