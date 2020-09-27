@@ -39,7 +39,7 @@ This project is used to accumulate consumed books and articles.
 
     - [Lisa Feldman Barrett: How the Brain Creates Emotions | MIT Artificial General Intelligence (AGI)](https://www.youtube.com/watch?v=qwsft6tmvBA)
 
-    - [How Emotions Are Made](https://book.douban.com/subject/26816436/)
+    - [How Emotions Are Made](https://jyotsnabooks.files.wordpress.com/2017/12/how-emotions-are-made-the-secret-life-of-the-brain.pdf)
 
       > Can find the book preview from google books
 
