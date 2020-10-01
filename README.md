@@ -52,3 +52,9 @@ This project is used to accumulate consumed books and articles.
 - [Introduction to sociology](https://openlibrary.org/works/OL2236190W/Introduction_to_sociology?edition=introductiontoso00tisc)
 
   The reason to explore sociology topic, is derived from the claim of "money, nation and religion are social realities". Then the question comes: what's the discipline studies it?
+
+## Software Engineering Team
+
+- [High-Quality Software Engineering](https://www.lurklurk.org/hqse.pdf)
+
+    > AuthorL: David Drysdale
