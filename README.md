@@ -58,3 +58,9 @@ This project is used to accumulate consumed books and articles.
 - [High-Quality Software Engineering](https://www.lurklurk.org/hqse.pdf)
 
     > AuthorL: David Drysdale
+
+## Physics
+
+- [a brief history of time](http://www.fulviofrisone.com/attachments/article/365/[Science%20-%20Physics]%20Hawking,%20Stephen%20-%20A%20Brief%20History%20Of%20Time.pdf)
+
+  > Author: Stephen Hawking
