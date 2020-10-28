@@ -21,9 +21,13 @@ This project is used to accumulate consumed books and articles.
 - [What does "monitoring" mean? (FOSDEM 2017)](https://www.youtube.com/watch?v=hCBGyLRJ1qo)
 
 
-## Engineering Philosophy
+## Software Philosophy
 
 - [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)
+
+- [High-Quality Software Engineering](https://www.lurklurk.org/hqse.pdf)
+
+    > AuthorL: David Drysdale
 
 ## Design Methodology
 
@@ -31,9 +35,12 @@ This project is used to accumulate consumed books and articles.
 
 ## Vision
 
-- [Neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
 
-## Psychology
+
+## Psychology & Neuroscience
+
+
+- [Neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
 
 - [Lisa Feldman Barrett](https://en.wikipedia.org/wiki/Lisa_Feldman_Barrett)
 
@@ -53,14 +60,9 @@ This project is used to accumulate consumed books and articles.
 
   The reason to explore sociology topic, is derived from the claim of "money, nation and religion are social realities". Then the question comes: what's the discipline studies it?
 
-## Software Engineering Team
-
-- [High-Quality Software Engineering](https://www.lurklurk.org/hqse.pdf)
-
-    > AuthorL: David Drysdale
-
 ## Physics
 
 - [a brief history of time](http://www.fulviofrisone.com/attachments/article/365/[Science%20-%20Physics]%20Hawking,%20Stephen%20-%20A%20Brief%20History%20Of%20Time.pdf)
 
   > Author: Stephen Hawking
+
