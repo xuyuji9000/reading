@@ -21,13 +21,15 @@ This project is used to accumulate consumed books and articles.
 - [What does "monitoring" mean? (FOSDEM 2017)](https://www.youtube.com/watch?v=hCBGyLRJ1qo)
 
 
-## Software Philosophy
+## Computer Science
 
 - [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)
 
 - [High-Quality Software Engineering](https://www.lurklurk.org/hqse.pdf)
 
     > AuthorL: David Drysdale
+
+- [Introduction to Algorithms](http://sd.blackball.lv/library/Introduction_to_Algorithms_Third_Edition_(2009).pdf)
 
 ## Design Methodology
 
