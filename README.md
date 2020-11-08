@@ -31,6 +31,12 @@ This project is used to accumulate consumed books and articles.
 
 - [Introduction to Algorithms](http://sd.blackball.lv/library/Introduction_to_Algorithms_Third_Edition_(2009).pdf)
 
+- [The C Programming Language](https://openlibrary.org/books/OL2030445M/The_C_Programming_Language)
+
+  > Can borrow from Open Library
+
+  > This book is used to consolidate the foundation of using C language.
+
 ## Design Methodology
 
 - [Domain Driven Design](http://188.166.46.4/get/PDF/Eric%20Evans-Domain-Driven%20Design_%20Tackling%20Complexity%20in%20the%20Heart%20of%20Software_14.pdf)
