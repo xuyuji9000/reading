@@ -46,6 +46,29 @@ This document is used to record the notes of reading the article[1].
 
     > It's interesting the whole script is organized around getting `shiv_bin` and pass parameter into it.
 
+- Find **.shiv** directory
+
+    ``` bash
+    # Find the shiv repository
+    if [ "$1" = '_find_shiv' ]; then
+        # Search upward to sysroot.
+        dir="$(pwd)"
+        while [ ! -d "$dir"/.shiv ] && [ "$dir" != '/' ]; do
+            dir="$(dirname "$dir")"
+        done
+
+        # If we found something, emit it.
+        if [ -d "$dir"/.shiv ]; then
+            echo "$dir"
+            exit 0
+        else
+            exit 1
+        fi
+    fi
+    ```
+
+    > This logic is reused many many times.
+
 - if condition based on script exit code
 
 
