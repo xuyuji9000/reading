@@ -1,5 +1,11 @@
 This document is used to record the notes of reading the article[1].
 
+- Environment: `busybox:stable`
+
+    `docker run -it busybox:stable`
+
+    > Cause I'm using Macos which uses BSD userland, so I'm using docker to get a busybox userland for having an environment aligned with the article.
+
 - `(>&2 echo 'Already a shiv repository.')` looks like a nice way to put out warning information into the sterr.
 
 - Use internals
