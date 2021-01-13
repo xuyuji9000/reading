@@ -1,5 +1,43 @@
 This document is used to record the notes of reading the article[1].
 
+- `(>&2 echo 'Already a shiv repository.')` looks like a nice way to put out warning information into the sterr.
+
+- Use internals
+
+    ``` bash
+    #!/bin/sh
+
+    set -ex
+
+    shiv_bin="$(realpath "$0")"
+
+    # Init a new repository
+    if [ "$1" = '_init' ]; then
+        if [ -d '.shiv' ]; then
+            (>&2 echo 'Already a shiv repository.')
+            exit 1
+        fi
+
+        mkdir '.shiv'
+
+        # TODO: Form a tree of folders...
+
+        exit 0
+    fi
+
+    # CLI parsing
+    if [ "$1" = 'init' ]; then
+        "$shiv_bin" '_init'
+        exit 0
+    else
+        (>&2 echo 'Unknown command.')
+        exit 1
+    fi
+
+    ```
+
+    > `init` is by design exposed to user, `_init` is a service to `init`
+
 # Reference
 
 1. [Shiv - Let's Build a Version Control System!](https://shatterealm.netlify.app/programming/2021_01_02_shiv_lets_build_a_vcs)
