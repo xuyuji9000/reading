@@ -44,6 +44,8 @@ This document is used to record the notes of reading the article[1].
 
     > `init` is by design exposed to user, `_init` is a service to `init`
 
+    > It's interesting the whole script is organized around getting `shiv_bin` and pass parameter into it.
+
 - if condition based on script exit code
 
 
