@@ -38,6 +38,25 @@ This document is used to record the notes of reading the article[1].
 
     > `init` is by design exposed to user, `_init` is a service to `init`
 
+- if condition based on script exit code
+
+
+    ``` bash
+    # Init a new repository
+    if [ "$1" = '_init' ]; then
+        if "$shiv_bin" '_find_shiv' >/dev/null; then
+            (>&2 echo 'Already a shiv repository.')
+            exit 1
+        fi
+
+        mkdir '.shiv'
+
+        # TODO: Form a tree of folders...
+
+        exit 0
+    fi
+    ```
+
 # Reference
 
 1. [Shiv - Let's Build a Version Control System!](https://shatterealm.netlify.app/programming/2021_01_02_shiv_lets_build_a_vcs)
