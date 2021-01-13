@@ -88,8 +88,40 @@ This document is used to record the notes of reading the article[1].
     fi
     ```
 
+- Dissect `relpath()`
+
+    ``` bash
+    relPath () {
+        local common path up
+        common=${1%/} path=${2%/}
+        while test "${path#"$common"/}" = "$path"; do
+            common=${common%/*} up=../$up
+        done
+        path=$up${path#"$common"/}; path=${path%/}; printf %s "${path:-.}"
+    }
+    # Readlink requires the file actually exist with the -f flag, but we don't
+    # have much of a choice.
+    relpath () { relPath "$(readlink -f "$1")" "$(readlink -f "$2")"; }
+    ```
+
+    > `readlink -f` follow through the symbolic link and return absolute path
+
+    > `${parameter%word}` remove the shortest suffix matching pattern[2]
+
+    > `common=${1%/}` remove **/** from the end of `$1`
+
+    > `${parameter#word}` remove the shortest prefix matching pattern
+
+    > It feels weired **..** is used in the relative path from file to repo root, cause this means target file is outside of the repo root
+
+
+
 # Reference
 
 1. [Shiv - Let's Build a Version Control System!](https://shatterealm.netlify.app/programming/2021_01_02_shiv_lets_build_a_vcs)
 
     > This article describes the process of an engineer try to build a custom version control system.
+
+2. [Shell Command Language](https://pubs.opengroup.org/onlinepubs/007904875/utilities/xcu_chap02.html)
+
+    > This document provides POSIX *variabe substitution* reference.
