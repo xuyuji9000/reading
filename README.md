@@ -81,3 +81,7 @@ This project is used to accumulate consumed books and articles.
 - [Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes](https://arxiv.org/abs/0812.4360)
 
   > Author: Juergen Schmidhuber
+
+- The Perfect Dictatorship: China in the 21st Century 
+
+    > Can not find this book on douban
