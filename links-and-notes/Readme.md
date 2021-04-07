@@ -18,5 +18,6 @@ Actions:
 - Search command
 
 ```
-git grep
+# show the file name only
+git grep -i --name-only PATTERN
 ```
