@@ -2,6 +2,10 @@
 
 This project is used to accumulate consumed books and articles.
 
+## Links and notes
+
+- [Links and notes](./links-and-notes/Readme.md)
+
 
 ## Linux Admin Basics
 
