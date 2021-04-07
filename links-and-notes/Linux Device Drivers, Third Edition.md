@@ -204,8 +204,11 @@ The network subsystem of the Linux kernel is designed to be completely protocol-
 
 This chapter describes how the network interfaces fit in with the rest of the Linux kernel and provides example in the form of a memory-based modularized network interface, which is called snull.
 
+Page 546
 
+TTY drivers
 
+a tty device gets its name from the very old abbreviation of teletypewriter and was originally associated with the physical or virtual terminal connection to a Unix machine. Over time, the name also come to mean any serial port style device, as terminal connections could also be created over such a connection. Some examples of physical tty devices are serial ports, USB-to-serial-port converters, and some types of modems that need special processing to work properly.
 
 
 
