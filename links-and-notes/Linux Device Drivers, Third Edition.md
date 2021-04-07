@@ -142,7 +142,13 @@ Typing the previous make command can get tiresome after a while, so the kernel d
 
 once again, we are seeing the extended GNU make syntax in action. This makefile is read twice on a typical build. When the makefile is invoked from the command line, it notices that the KERNELRELEASE variable has not been set. It locates the kernel source directory by taking advantage of the fact that the symbolic link build in the installed modules directory points back at the kernel build tree. If you are not actually running the kernel that you are building for, you can supply a KERNELDIR= option on the command line, set the KERNELDIR environment variable, or rewrite the line that sets KERNELDIR in the makefile.
 
+Page 26
 
+Platform Dependency
+
+Each computer platform has its peculiarities, and kernel designers are free to explot alll the peculiarities to achieve better performance in the target object file.
+
+For example, the IA32 (x86) architecture has been subdivided into several different processor types. The old 80386 processor is still supported (for now), even though its instruction set is, by modern standards, quite limited.
 
 
 
