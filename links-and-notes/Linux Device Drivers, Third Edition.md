@@ -132,8 +132,15 @@ Page 19
 
 Function "blk_init_queue" mentioned in the diagram has been removed from kernel since v5.0
 
+Page 24
 
+make -C ~/kernel-2.6 M=`pwd` modules
 
+this command starts by changes its directory to the one provided with the -C option (that is, your kernel source directory). There it finds the kernel's top-level makefile. The M= option causes the makefile to move back into your module source directory before trying to build the modules target. thiis target, in turn, refers to the list of modules found in the obj-m variable, which we've set to module.o in our examples.
+
+Typing the previous make command can get tiresome after a while, so the kernel developers have developed a sort of makefile idiom, which makes life easier for those building modules outside of the kernel tree. The trick is to write your makefile as follows.
+
+once again, we are seeing the extended GNU make syntax in action. This makefile is read twice on a typical build. When the makefile is invoked from the command line, it notices that the KERNELRELEASE variable has not been set. It locates the kernel source directory by taking advantage of the fact that the symbolic link build in the installed modules directory points back at the kernel build tree. If you are not actually running the kernel that you are building for, you can supply a KERNELDIR= option on the command line, set the KERNELDIR environment variable, or rewrite the line that sets KERNELDIR in the makefile.
 
 
 
