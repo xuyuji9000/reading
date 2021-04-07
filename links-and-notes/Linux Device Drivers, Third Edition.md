@@ -151,6 +151,19 @@ Each computer platform has its peculiarities, and kernel designers are free to e
 For example, the IA32 (x86) architecture has been subdivided into several different processor types. The old 80386 processor is still supported (for now), even though its instruction set is, by modern standards, quite limited.
 
 
+Page 30 
+
+Preliminaries 
+
+We are getting closer to looking at some actual module code. But first, we need to look at some other things that need to appear in your module source files. The kernel is a unique environment, and it imposes its own requirements on code that would interface with it.
+
+//...
+
+There are a few that are specific to modules, and must appear in every loadable module. Thus, just about all module code has the following:
+
+    #include <linux/module.h>
+    #include <linux/init.h>
+
 
 
 
