@@ -7,3 +7,16 @@ Design requirements:
 2. Able to adding note and repeat
 
 3. Can be searched
+
+
+Actions:
+
+- Search Google Drive **notes** directory for legacy notes
+
+    and move here
+
+- Search command
+
+```
+git grep
+```
