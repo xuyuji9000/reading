@@ -166,6 +166,21 @@ There are a few that are specific to modules, and must appear in every loadable 
 
 
 
+Page 35
+
+Module parameters
+
+Several parameters that a driver needs to know can change from system to system. These can vary from the device number to use (as we'll see in the next chapter) to numerous aspects of how the driver should operate.
+
+
+
+
+
+
+
+
+
+
 
 
 
