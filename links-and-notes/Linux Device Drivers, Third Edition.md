@@ -173,11 +173,21 @@ Module parameters
 Several parameters that a driver needs to know can change from system to system. These can vary from the device number to use (as we'll see in the next chapter) to numerous aspects of how the driver should operate.
 
 
+Page 302 
 
+Chapter 12 PCI Drivers
 
+While chapter 9 introduced the lowest levels of hardware control, this chapter provides an overview of the higher-level bus architecture. A bus is made up of both an electrical interface and a programming interface. In this chapter, we deal with the programming interface.
 
+This chapter covers a number of bus architectures. However, the primary focus is on the kernel functions that access Peripheral component interconnect (PCI) peripherals, because these days the PCI bus is the most commonly used peripheral bus on desktops and bigger computers. The bus iis the one that is best supported by the kernel. ISA is still common for electronic hobbyist and is described later, although it is pretty much a bare-metal kind of bus, and there isn't much to say in addition to what is covered in Chapters 9 and 10.
 
+The PCI interface
 
+Although many computer users think PCI as a way of laying out electrical wires, it is actually a complete set of specifications defining low different parts of a computer should interact.
+
+The PCI specification covers most issues related to computer interfaces. We are not going to cover it all here; in this section, we are mainly cnocerned with how a PCI driver can find its harware and gain access to it. The probing techniques dicussed in the sections "Module Parameters" in Chapter 2 and "Autodetecting the IRQ Number" in Chapter 10 can be used with PCI devices, but the specification offers an alternative that is preferabke to probing.
+
+The PCI architecture was designed as a replacement for the ISA standard, with three main goas: to get better performance when transferring data between the computer and its peripherals, to be as platform independent as possible, and to simplify adding and removing peripherals to the system.
 
 
 
