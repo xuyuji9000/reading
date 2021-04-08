@@ -15,9 +15,12 @@ Actions:
 
     and move here
 
-- Search command
+- Search commands
 
 ```
 # show the file name only
 git grep -i --name-only PATTERN
+
+# search commit message
+git log --walk-reflogs --grep PATTERN
 ```
