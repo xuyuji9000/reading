@@ -18,11 +18,15 @@ Actions:
 - Search commands
 
 ```
-# show the file name only
+# search by file content
 git grep -i --name-only PATTERN
 
-# search commit message
+# search by filename
+git ls-files|grep -i PATTERN
+
+# search by commit message
 git log --walk-reflogs --grep PATTERN
+
 ```
 
 - legacy migration
