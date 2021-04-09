@@ -24,3 +24,7 @@ git grep -i --name-only PATTERN
 # search commit message
 git log --walk-reflogs --grep PATTERN
 ```
+
+- legacy migration
+
+    Need to move legacy link and note from google drive **note** folder over.
