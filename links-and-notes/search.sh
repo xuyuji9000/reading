@@ -7,13 +7,13 @@ function usage {
   "
 }
 
-if [[ $# -le 0 ]]; then
+if [ $# -le 0 ]; then
     echo "\nNo parameter passed.\n"
     usage
     exit 1
 fi
 
-while [[ $# -gt 0 ]]
+while [ $# -gt 0 ]
 do 
 key="$1"
 case $key in
