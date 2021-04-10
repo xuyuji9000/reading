@@ -1,1 +1,1 @@
-[Runtime locking correctness validator](https://www.kernel.org/doc/Documentation/locking/lockdep-design.txt)
+[Runtime locking correctness validator](https://www.kernel.org/doc/html/latest/locking/lockdep-design.html)
