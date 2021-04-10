@@ -6,11 +6,6 @@ function usage {
   "
 }
 
-# if [ -z "${1}" ] ; then 
-#     echo "Search pattern can not be empty."
-#     exit 1
-# fi
-
 while [[ $# -gt 0 ]]
 do 
 key="$1"
