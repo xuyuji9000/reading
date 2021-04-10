@@ -197,6 +197,43 @@ The PCI architecture was designed as a replacement for the ISA standard, with th
 
 
 
+Page Chapter 14
+
+The Linux Device Model
+
+One of the stated goals for the 2.5 development cycle was the creation of a unified device model for the kernel. Previous kernels had no single data structure to which they  could trun to obtain information about how the system is put together. Despite this lack of information, things worked well for some time. The demand of newer systems, with their more complicated topologies and need to support features such as power management, made it clear, however, that a general abstraction describing the structure of the system was needed.
+
+The 2.6 device model provides that abstration. It is now used within the kernel to support a wide variety of tasks, including:
+- Power management and system shutdown
+    These requires an understanding of the system's structure. For example, a USB host adaptor cannot be shut down before dealing with all of the devices connected to that adaptor. The device model ebables a traveral of the system's hardware in the right order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
