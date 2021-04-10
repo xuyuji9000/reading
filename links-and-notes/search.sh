@@ -2,9 +2,16 @@
 
 function usage {
   echo "Help information:
---content Search by links and notes content
+
+    --content Search by links and notes content
   "
 }
+
+if [[ $# -le 0 ]]; then
+    echo "\nNo parameter passed.\n"
+    usage
+    exit 1
+fi
 
 while [[ $# -gt 0 ]]
 do 
