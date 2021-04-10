@@ -32,3 +32,7 @@ git log --walk-reflogs --grep PATTERN
 - legacy migration
 
     Need to move legacy link and note from google drive **note** folder over.
+
+- For content does not have permission to distribute
+
+    Use Google Drive as the tool to store the link and note
