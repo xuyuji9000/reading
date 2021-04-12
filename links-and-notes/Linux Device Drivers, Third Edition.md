@@ -262,9 +262,74 @@ There are few important differences between mounted disks and packet-delivery in
 
 Page 498
 
-The network subsystem of the Linux kernel is designed to be completely protocol-independent. This applies to both networking protocols(IP, IPX or other protocols) and hardware protocols (Ethernet versus token ring, etc). Interaction between a network driver and the kernel properly deals with one network packet at a time; this allows protocol issues to be hidden neatly from the driver and the physical transmission to be hidden from the protocol.
+This section dicusses the design concepts that led to the snull network interface. Although this information might appear to be of marginal use, failing to understand it might lead to problems when you play with the sample code.
 
-This chapter describes how the network interfaces fit in with the rest of the Linux kernel and provides example in the form of a memory-based modularized network interface, which is called snull.
+Page 499
+
+Assigning IP Numbers
+
+The snull module creates two interfaces. These interfaces are different from a simple loopback, in that whatever you transmit through one of the interfaces loops back to the other one, not to itself. It looks like you have two external links, but actually yoour computer is replying to itself.
+
+Unfortunately, this effect can't be accomplished through IP number assignments alone, because the kernel wouldn't send out a packet through interface A that was directed to its own interface B. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Page 546
 
