@@ -1,23 +1,18 @@
-This folder is used to store the reading or watching of useful links.
+This folder is used to store useful links.
 
-Design requirements:
+# Design requirements:
 
 1. Able to contain link name and URL
 
-2. Able to adding note and repeat
+2. Able to add about the link
 
 3. Can be searched
 
 
-Actions:
-
-- Search Google Drive **notes** directory for legacy notes
-
-    and move here
-
 - Search commands
 
-```
+
+``` shell
 # search by file content
 git grep -i --name-only PATTERN
 
@@ -29,10 +24,17 @@ git log --walk-reflogs --grep PATTERN
 
 ```
 
-- legacy migration
+- [helper.sh](./helper.sh)
 
-    Need to move legacy link and note from google drive **note** folder over.
+    This script contains repeatly used command
+
+
+- legacy migration
+    
+
+    Need to move legacy link and note from Google Drive **note** folder over.
 
 - For content does not have permission to distribute
 
-    Use Google Drive as the tool to store the link and note
+    Use Google Drive **note** folder to store and search.
+
