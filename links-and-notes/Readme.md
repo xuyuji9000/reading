@@ -21,6 +21,8 @@ git ls-files|grep -i PATTERN
 
 # search by commit message
 git log --walk-reflogs --grep PATTERN
+git log --all --grep='PATTERN'
+
 
 ```
 
