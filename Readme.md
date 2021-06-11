@@ -14,12 +14,6 @@ This project is used to accumulate consumed books and articles.
 - [Linux Admin Tutorial](https://www.tutorialspoint.com/linux_admin/index.htm)
 
 ## Monitoring 
-
-- [Monitoring and Observability](https://medium.com/@copyconstruct/monitoring-and-observability-8417d1952e1c)
-
-    This is a nice article introducting these two concepts.
-    
-
 - Compare monitoring approaches: [Logs and Metrics and Graphs, Oh My!](https://grafana.com/blog/2016/01/05/logs-and-metrics-and-graphs-oh-my/)
 
 - [Brendan Gregg Blog, work on large scale cloud computing performance at Netflix](http://www.brendangregg.com/)
