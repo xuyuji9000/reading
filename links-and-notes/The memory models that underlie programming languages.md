@@ -12,3 +12,5 @@ Article Reference:
 
 > Found a Hacker News link discuss about the link
 
+2. [Parallel array](https://en.wikipedia.org/wiki/Parallel_array)
+
