@@ -6,6 +6,8 @@ function usage {
     --search Search by links and notes content
 
     --edit   Edit the target link and note
+    
+    -h       Print help information
   "
 }
 
