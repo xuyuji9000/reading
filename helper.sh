@@ -6,6 +6,7 @@ function usage {
     --search Search by links and notes content
 
     --edit   Edit the target link and note
+             Default using './links-and-notes' directory to store documents
     
     -h       Print help information
   "
