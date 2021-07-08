@@ -22,3 +22,5 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 > - Organizations succeed(thus survive) by implementing technologies better than rivals.
 
 
+[17:23](https://youtu.be/e0Oh-0AZ7Vo?t=1045) What do the four types of platform have in common?
+
