@@ -7,6 +7,14 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 > Created a set of definitions and Stuart's has been using them and we've seen them the last whole day, that separated the first order essential properties from the second order distractions. 
 > Basically took a lot of the world's complexity away from the analysis and given clear definitions you can apply logic and sometimes mathmatical tools and derive result that can be tracked back to primitive assumptions.
 
+[2:05](https://youtu.be/e0Oh-0AZ7Vo?t=125)
+
+> Technology are highly divisible, so that finding the very unit of analysis is a challenge. Their motion is not observable at scale, it happens in hidding. 
+> As it were, you only see the end results.
+> The outcomes are uncertain, but probability distributions are not available through any mechanism that we know.
+> And the inputs combined in non-linear ways. We're used to non-linearity from option theory, but we are not always so sure how it works.
+> Part of what I'm going talk to you about is how I believe it works.
+
 
 [3:32](https://www.youtube.com/watch?v=e0Oh-0AZ7Vo&t=212s) How do we talk about technology?
 
