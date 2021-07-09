@@ -50,6 +50,10 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 > - There are two fundamental types of technologies: *step processes* and *platform systems*
 > - They demand "almost opposite" forms  of organization
 
+[13:33](https://youtu.be/e0Oh-0AZ7Vo?t=813)
+
+> This chunk needs a better knowledge of option theory to understand.
+
 
 [17:23](https://youtu.be/e0Oh-0AZ7Vo?t=1045) What do the four types of platform have in common?
 
