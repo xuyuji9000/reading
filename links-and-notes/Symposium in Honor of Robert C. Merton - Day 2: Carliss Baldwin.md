@@ -30,6 +30,12 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 
 > Neither approach helps us to predict when and why different forms of organization succeed ... or fail.
 
+[4:53](https://youtu.be/e0Oh-0AZ7Vo?t=293) 
+
+> But I want to say, building on Steward's presentation. If you want to really boggle your imagination. I'm going to argue that there are real options embedded in the very productive systems the actual production processes and organizational structures chosen by the firms. 
+> So how do those options which are numerous and in every company both mature and growth. How would you incorporate those options into an integrated theory of capital structure. That would be quite something.
+
+
 [5:40](https://youtu.be/e0Oh-0AZ7Vo?t=340) 100 Years of America's Top 10 Companies
 
 > Arguements:
