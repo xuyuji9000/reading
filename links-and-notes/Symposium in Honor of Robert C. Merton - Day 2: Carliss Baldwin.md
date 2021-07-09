@@ -38,8 +38,17 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 
 [5:40](https://youtu.be/e0Oh-0AZ7Vo?t=340) 100 Years of America's Top 10 Companies
 
+> We cannot in fact explain or predict the history of our economy from 1917 when Chandler's big firms were dominant to 2017 when a whole new set of firms at vastly larger market values.
+>
+> Why are we seeing this transition? Why do the market values sort out the way they do?
+>
+> So I'm gonna try to give an explanation based on the theory of real options.
+
 > Arguements:
 > - Organizations succeed(thus survive) by implementing technologies better than rivals.
+>     > That's functional arguement. The function of the organization is to carry out a technology in some fashion that generates value.
+> - There are two fundamental types of technologies: *step processes* and *platform systems*
+> - They demand "almost opposite" forms  of organization
 
 
 [17:23](https://youtu.be/e0Oh-0AZ7Vo?t=1045) What do the four types of platform have in common?
