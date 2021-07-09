@@ -55,5 +55,9 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 > This chunk needs a better knowledge of option theory to understand.
 
 
+[14:07](https://youtu.be/e0Oh-0AZ7Vo?t=847)
+
+> Using techniques out of [Theory of Rational Option Pricing](https://openlibrary.org/works/OL4784786W/Theory_of_rational_option_pricing?edition=theoryofrational00mert)
+
 [17:23](https://youtu.be/e0Oh-0AZ7Vo?t=1045) What do the four types of platform have in common?
 
