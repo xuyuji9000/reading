@@ -2,6 +2,12 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 
 # Highlights
 
+[0:50](https://www.youtube.com/watch?v=e0Oh-0AZ7Vo&t=50s)
+
+> Created a set of definitions and Stuart's has been using them and we've seen them the last whole day, that separated the first order essential properties from the second order distractions. 
+> Basically took a lot of the world's complexity away from the analysis and given clear definitions you can apply logic and sometimes mathmatical tools and derive result that can be tracked back to primitive assumptions.
+
+
 [3:32](https://www.youtube.com/watch?v=e0Oh-0AZ7Vo&t=212s) How do we talk about technology?
 
 > Two level of technical analysis
