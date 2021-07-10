@@ -50,14 +50,58 @@ This file documents the learning of [Symposium in Honor of Robert C. Merton - Da
 > - There are two fundamental types of technologies: *step processes* and *platform systems*
 > - They demand "almost opposite" forms  of organization
 
-[13:33](https://youtu.be/e0Oh-0AZ7Vo?t=813)
+[6:45](https://youtu.be/e0Oh-0AZ7Vo?t=405) Two foundamental types of technology
+
+> - Step processes 
+> - Platform systems
+
+[7:20](https://youtu.be/e0Oh-0AZ7Vo?t=440) Operations, distribution, marketing rely on step processes
+
+[8:33](https://youtu.be/e0Oh-0AZ7Vo?t=513) Four types of platform systems
+
+[10:45](https://youtu.be/e0Oh-0AZ7Vo?t=645) Same firm may contain many different types of platforms
+
+[11:35](https://youtu.be/e0Oh-0AZ7Vo?t=695) Step processes
+
+
+[13:33](https://youtu.be/e0Oh-0AZ7Vo?t=813) Real option intuition
 
 > This chunk needs a better knowledge of option theory to understand.
 
 
-[14:07](https://youtu.be/e0Oh-0AZ7Vo?t=847)
+
+
+[14:00](https://youtu.be/e0Oh-0AZ7Vo?t=847) Provable properties of step process with randbom bottlenecks
 
 > Using techniques out of [Theory of Rational Option Pricing](https://openlibrary.org/works/OL4784786W/Theory_of_rational_option_pricing?edition=theoryofrational00mert)
 
+[15:45](https://youtu.be/e0Oh-0AZ7Vo?t=945) Piecemeal control cannot address system wide bottlenecks
+
+[16:10](https://youtu.be/e0Oh-0AZ7Vo?t=970) Implications for organization
+
+[17:01](https://youtu.be/e0Oh-0AZ7Vo?t=1021) What about platform systems?
+
 [17:23](https://youtu.be/e0Oh-0AZ7Vo?t=1045) What do the four types of platform have in common?
+
+[18:11](https://youtu.be/e0Oh-0AZ7Vo?t=1091) Platform system vs Step Process Value structure
+
+[18:53](https://youtu.be/e0Oh-0AZ7Vo?t=1133) Provable properties of platform systems
+
+[19:47](https://youtu.be/e0Oh-0AZ7Vo?t=1189) Implications or organization
+
+[20:40](https://youtu.be/e0Oh-0AZ7Vo?t=1240) In terms of organization design, platform systems are the opposite of step processes
+
+[21:12](https://youtu.be/e0Oh-0AZ7Vo?t=1272) But steps and platforms are not really opposites
+
+[21:57](https://youtu.be/e0Oh-0AZ7Vo?t=1319) The real question is: How many modules, why and where?
+
+[22:40](https://youtu.be/e0Oh-0AZ7Vo?t=1360) Modules are more valuable when underlying technologies are changing rapidly
+
+[23:26](https://youtu.be/e0Oh-0AZ7Vo?t=1406) Rates of technical change are MUCH higher for computers and software than for physical goods.
+
+[24:48](https://youtu.be/e0Oh-0AZ7Vo?t=1488) Value of system as a function of number of modules and the rate of technical change
+
+[28:01](https://youtu.be/e0Oh-0AZ7Vo?t=1681) This means
+
+[28:20](https://youtu.be/e0Oh-0AZ7Vo?t=1700) Wrap-up
 
