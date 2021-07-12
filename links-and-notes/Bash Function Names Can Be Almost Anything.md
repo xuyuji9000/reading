@@ -2,6 +2,15 @@
 
 # Learn about `printf`[1]
 
+The `-v` option tells `printf` not to print the output, but to assign it to the variable.
+
+``` shell
+#!/bin/bash
+
+printf -v a "test"
+echo $a
+```
+
 
 # Reference
 
