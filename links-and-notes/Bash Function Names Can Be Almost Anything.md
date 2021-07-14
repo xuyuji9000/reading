@@ -11,7 +11,23 @@ a=1
 echo $a
 ```
 
-# Learn about `printf`[1]
+
+# Print single character function names
+
+
+``` shell
+#!/bin/bash
+
+for n in {33..126}; do
+  printf -v oct "%o" "$n"
+#   echo "$oct"
+  printf -v chr "\\$oct"
+  eval "function $chr { echo -n '$chr'; }; $chr" 2>/dev/null
+done
+```
+
+
+## Learn about `printf`[1]
 
 The `-v` option tells `printf` not to print the output, but to assign it to the variable.
 
