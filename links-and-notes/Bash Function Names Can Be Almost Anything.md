@@ -39,7 +39,24 @@ echo $a
 ```
 
 
+
+# Echo with a smiling face
+
+``` shell
+#!/bin/bash
+
+function 😃 { echo "haha!"; }
+```
+
+
+# command[2]
+
+> command [-pVv] command [arguments …]
+
+Runs command with arguments ignoring any shell function named command.
+
 # Reference
 
 1. [Bash printf Command](https://linuxize.com/post/bash-printf-command/)
 
+2. [ 4.2 Bash Builtin Commands / command](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html)
