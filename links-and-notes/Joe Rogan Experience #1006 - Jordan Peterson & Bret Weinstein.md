@@ -39,3 +39,35 @@ Jordan:
 
 > I think we've already figured out everyone from the right to the left. Everyone's figured out wherever the NAZIs went that was wrong. We all agreed on that. We're not going there anymore and so when someone pops up and says we should go there. It's like their immediately identifiable, you can box them in and if you have any sense like you know like many conservatives did. In the aftermath of the Charlottesville they come out and say "In case it needs to be said again, we're actually not allied with those people."
 
+Joe:
+
+> Yeah. That's one of the most disturbing things for many people about Donauld Trump's reaction to it. That he didn't take a hard stance against these white supremacists, showing up with tiki torches, walking to the street, yelling anti-semitic phrases. Whatever. It was a horrific thing to watch. Donald Trump comes out and says "There was horrible hehavior on all sides."
+
+Jordan:
+
+> I thought about that for a lot, because I got tangled up with that in stange way in Canada. I was supposed to appear on panel, a panel discussing the suppression of free speech on university campuses, which was then promptly canceled by the university that was going to host it, in the aftermath of Charlottesville. Partly because one of the panelist was going to be faith goldie who was the journalist that was covering Charlottesville and got the footage of the car and the damage. We were targeted immediately afterward with the NAZI epithet and Ryerson shutdown the free speech panel.
+
+Joe:
+
+> How you were targeted? You were targeted as NAZIs?
+
+Jordan:
+
+> What happened was this this person put up a facebook page and used a swastika with a no with a cirle and a line through it. And said "No facists at Ryerson" essentially. But she used the swastika and she got a bunch of people rallied together to pressure the university administration into cancelling the event which they promptly did. And then they had a celebration party the night of the event. They got a couple of hundred of people out to the celebration at Ryerson. And they were united under the banner of Hammer and Sickle. And were calling for revolution. And what was so interesting about that and I really mean technically that was interesting was that the mainstream media said virtually nothing about the fact that these, let's call them counter-protesters. I don't know exactly how you'd term them, had come out under this muderous symbol. And that's made me think, I can't figure out why the swastika is an immediate identifier of a pathological personality and the hammer-and-sickle isn't. There's actually a reason, it isn't just arbitrary and I think maybe it's something like the NAZI is the guy who knives you in the ally and steals your wallet and the communist is the white-collar criminal who takes your pension and you're more afraid of the first person than the second person, because the damage they do is more proximal and immediate and emotionally recognizable, but that's the second guy who takes your pension for example he's perhaps even more dangerous, but there's a bloodiness about the NAZI symbol and the immediate emotional impact that the hammer-and-sickle just doesn't produce. And some of that is because people are badly educated historically.
+
+Joe:
+
+> I think that's it.
+
+[9:01](https://youtu.be/6G59zsjM2UI?t=541)
+
+Jordan:
+
+> I don't think that's just ignorance.
+
+Joe:
+
+> Do you think people wearing those Che Guevara T-shirts really understand the history of Che Guevara or you think he represents this sexy South American counter-protest character, a guy who stands up to the establishment as we know it. A guy wa wearing a green beret hiding in the jungle fighting against the oppressive dictatorship of America. I mean that's what they're looking at when they see that image.
+
+
+
