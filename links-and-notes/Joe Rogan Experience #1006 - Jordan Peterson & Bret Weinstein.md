@@ -112,3 +112,26 @@ Bret:
 > And so I do think that looking at the tiny number of people who were doing what they were doing in Charlottesville and saying well that's we all agree that this is wrong misses the fact that actually, I think Trump is doing it cynically, but Trump was riding a wave that there are ideas which are not permissible from the environments from which we all grew up that are going to become permissible again if we are not careful to recognize that that's the nature of history.
 
 
+[43:06](https://youtu.be/6G59zsjM2UI?t=2586)
+
+[44:53](https://youtu.be/6G59zsjM2UI?t=2693)
+
+[49:12](https://youtu.be/6G59zsjM2UI?t=2952)
+
+[51:27](https://youtu.be/6G59zsjM2UI?t=3087)
+
+[56:44](https://youtu.be/6G59zsjM2UI?t=3404)
+
+[1:00:02](https://youtu.be/6G59zsjM2UI?t=3602)
+
+[1:06:49](https://youtu.be/6G59zsjM2UI?t=4009)
+
+[1:13:01](https://youtu.be/6G59zsjM2UI?t=4381)
+
+[1:20:17](https://youtu.be/6G59zsjM2UI?t=4817)
+
+[1:26:15](https://youtu.be/6G59zsjM2UI?t=5175)
+
+[1:31:52](https://youtu.be/6G59zsjM2UI?t=5512)
+
+[1:48:10](https://youtu.be/6G59zsjM2UI?t=6490)
