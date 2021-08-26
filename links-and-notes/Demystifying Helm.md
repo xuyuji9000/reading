@@ -2,23 +2,36 @@
 
 [1:14](https://youtu.be/2HPsPOwHOlY?t=74) 
 
-`helm show chart`
+``` shell
+helm show chart
+```
 
 ---
 
 [1:43](https://youtu.be/2HPsPOwHOlY?t=103) 
 
-`helm lint`
+``` shell
+helm lint
+```
 
 The lint command identifies what's right and what's wrong with the chart.
 
 ---
 [2:26](https://youtu.be/2HPsPOwHOlY?t=146)
 
-`helm install`
+``` shell
+helm install
+```
 
 ---
 [3:19](https://youtu.be/2HPsPOwHOlY?t=199)
 
 Parameterize with `values.yaml`.
+
+---
+[7:45](https://youtu.be/2HPsPOwHOlY?t=465)
+
+``` shell
+helm create .
+```
 
