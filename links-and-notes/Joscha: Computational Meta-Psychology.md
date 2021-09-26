@@ -52,3 +52,52 @@ We get "meaning" by "suitable encoding" patterns at our systematic interface.
 [5:08](https://youtu.be/WRdJCFEqFTU?t=308)
 
 AI has recently made huge progress in encoding data and perceptual interfaces.
+
+[6:55](https://youtu.be/WRdJCFEqFTU?t=415)
+
+Our best bet is not have a single classification with filtering. But instead what we want to have, we take the low level input, get a whole universe of features that is interrelated.
+So we have different levels of interrelations, at the first level we have percepts. On the slightly higher level, we have simulations. And on a even higher level, we have a concept landscape.
+
+How does this representation by simulation work?
+Now imagine you want to understand sound. If you are brain, you want to understand sound, you need to model it. Unfortunately, we cannot realy model sound with neurons. Sound can goes up to 20kHz, neurons don't want to do 20kHz, that's way too fast for them, they are something like 20 Hz.
+
+So what do you do?
+You need to make a fourier transform.
+
+[8:52](https://youtu.be/WRdJCFEqFTU?t=532) Modeling a world of music
+
+
+[9:17](https://youtu.be/WRdJCFEqFTU?t=557) Causal models
+
+- Weakly determined model
+
+- Strongly determined model
+
+> This is what we call an algorithm, now you are in the domain of comoputtion. 
+
+[9:51](https://youtu.be/WRdJCFEqFTU?t=591) Two Kingdoms
+
+Distinguish between Mathematics and Computation.
+
+[25:08](https://youtu.be/WRdJCFEqFTU?t=1508) What algorithm should a neocortex use to model the world? 
+Solomonoff Induction
+
+[28:18](https://youtu.be/WRdJCFEqFTU?t=1698) Announcing rewards: Dopamine
+
+[28:48](https://youtu.be/WRdJCFEqFTU?t=1728) Consuming rewards: Serotonin
+
+[30:42](https://youtu.be/WRdJCFEqFTU?t=1842) Learning vs Doing 
+
+- To learn, you need success / failure
+
+- To do,  you need anticipated reward
+
+[33:37](https://youtu.be/WRdJCFEqFTU?t=2017) Social learning
+
+[38:56](https://youtu.be/WRdJCFEqFTU?t=2336) Learning and truth
+
+[40:52](https://youtu.be/WRdJCFEqFTU?t=2452) Belief Attractors
+
+
+[48:52](https://youtu.be/WRdJCFEqFTU?t=2932) Immunization against mind viruses
+
