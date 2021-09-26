@@ -53,11 +53,6 @@ This project is used to accumulate consumed books and articles.
 
 - [Neuralink](https://waitbutwhy.com/2017/04/neuralink.html)
 
-- [Lisa Feldman Barrett](https://en.wikipedia.org/wiki/Lisa_Feldman_Barrett)
-
-    - [Lisa Feldman Barrett: How the Brain Creates Emotions | MIT Artificial General Intelligence (AGI)](https://www.youtube.com/watch?v=qwsft6tmvBA)
-
-
 - [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman)
 
   - [Thinking, Fast and Slow](https://book.douban.com/subject/6754574/)
