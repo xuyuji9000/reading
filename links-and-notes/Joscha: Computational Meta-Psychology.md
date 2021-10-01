@@ -79,6 +79,9 @@ You need to make a fourier transform.
 
 Distinguish between Mathematics and Computation.
 
+[13:23](https://youtu.be/WRdJCFEqFTU?t=803) What kind of hardware do we have?
+
+
 [25:08](https://youtu.be/WRdJCFEqFTU?t=1508) What algorithm should a neocortex use to model the world? 
 Solomonoff Induction
 
@@ -94,10 +97,14 @@ Solomonoff Induction
 
 [33:37](https://youtu.be/WRdJCFEqFTU?t=2017) Social learning
 
-[38:56](https://youtu.be/WRdJCFEqFTU?t=2336) Learning and truth
+[38:51](https://youtu.be/WRdJCFEqFTU?t=2331) Learning and truth
 
 [40:52](https://youtu.be/WRdJCFEqFTU?t=2452) Belief Attractors
 
+[42:21](https://youtu.be/WRdJCFEqFTU?t=2541) Meaning and God
 
 [48:52](https://youtu.be/WRdJCFEqFTU?t=2932) Immunization against mind viruses
 
+[52:26](https://youtu.be/WRdJCFEqFTU?t=3146)
+
+Become self-ware is the process of reverse engineering your mind.
