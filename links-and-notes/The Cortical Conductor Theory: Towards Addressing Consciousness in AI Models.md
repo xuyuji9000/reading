@@ -1,0 +1,1 @@
+[The Cortical Conductor Theory: Towards Addressing Consciousness in AI Models](https://web.archive.org/web/20211010022951/https://sci-hub.se/https://link.springer.com/chapter/10.1007/978-3-319-99316-4_3)
